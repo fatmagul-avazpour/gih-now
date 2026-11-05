@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@layer base{
+    @font-face {
+  font-family: "modam-black";
+  src: url("/public/fonts/Modam-Black.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modam-bold";
+  src: url("/public/fonts/Modam-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modam-ExtraBold";
+  src: url("/public/fonts/Modam-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modam-ExtraLight";
+  src: url("/public/fonts/Modam-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modam-light";
+  src: url("/public/fonts/Modam-Light.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modam-medium";
+  src: url("/public/fonts/Modam-Medium.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modam-Regular";
+  src: url("/public/fonts/Modam-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modam-SemiBold";
+  src: url("/public/fonts/Modam-SemiBold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+}
+
+
+
+
+
+
+@layer utilities {
+  .container {
+    @apply max-w-[80rem] mx-auto px-4 xl:px-5;
+  }
+}
+@layer components{
+  .banner-item-header{
+    @apply relative w-full h-44 sm:h-auto md:h-48 lg:h-auto
+  }
+  .banner-item-title{
+    @apply font-modam-bold text-lg sm:text-2xl lg:text-3xl
+  }
+  .banner-item-desc{
+    @apply text-base sm:text-2xl md:text-xl lg:text-2xl font-modam-bold mt-1 sm:mt-3 md:mt-2 lg:mt-3
+  }
+  .banner-item-btn{
+    @apply absolute md:bottom-1 lg:bottom-4  sm:left-10  left-5 bottom-1 sm:bottom-4 -translate-y-1/2 text-lightGreen-custom flex items-center justify-center gap-1 sm:gap-3 bg-white px-2 py-1.5 sm:px-3 sm:py-2 text-sm sm:text-base font-modam-medium rounded-xl
+  }
+}
+@theme {
+  --color-lightGreen-custom: #417f56;
+  --color-hardGreen-custom: #294f36;
+   --color-dark-bg: #183020;
+  --color-balck-custom:#212121;
+  --color-grayLight-custom:#EFEFEF;
+  --color-grayMedium-custom:#717171;
+  --font-modam-black:"modam-black";
+  --font-modam-semiBold: "modam-SemiBold";
+  --font-modam-regular: "modam-Regular";
+  --font-modam-medium:"modam-medium";
+  --font-modam-light:"modam-light";
+  --font-modam-ExtraLight:"modam-ExtraLight";
+  --font-modam-ExtraBold:"modam-ExtraBold";
+  --font-modam-bold:"modam-bold";
+
+}
+@custom-variant child (&>*)
